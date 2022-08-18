@@ -1,0 +1,55 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+<h2>jquery mouse event</h2>
+<style>
+    @keyframes example {
+0%   {background-color:rgb(240, 84, 206); left:0px; top:0px;}
+25%  {background-color:rgb(216, 82, 216); left:200px; top:0px;}
+50%  {background-color:rgb(166, 46, 146); left:200px; top:200px;}
+75%  {background-color:rgb(92, 49, 95); left:0px; top:200px;}
+100% {background-color:rgb(85, 14, 73); left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: rgb(70, 6, 59);
+animation-name: example;
+animation-duration: 5s;
+}
+</style>
+<section>
+    <div style="height: 1000px ;width: 500px;">
+    <h3>HELLO .....</h3>
+    <p>
+        MY NAME IS NIYATI PATEL.......
+    </p>
+<ol>
+    <li> </li>   
+</ol>
+</div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+    $("div").click(function(){
+    $(this).css("background-color","black");
+    $(this).css("color","aqua");
+    $("ol").append("<li> </li>");
+   
+
+
+     });     
+     });
+</script>
+
+</body>
+</html>
